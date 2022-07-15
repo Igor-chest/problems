@@ -27,3 +27,22 @@
 Проблема:
     не заменяет: BREAK 'не найден файл' + f
     на: _break( 'не найден файл' + f) в X#
+
+4:
+Файл:
+    src\sdklib\xml\XSharp\xmlEncoder.prg
+Проблема:
+    в двух строках:
+    local SAME_CONSOLE := false
+    local SYNC_CALL := true
+    не меняется на:
+    local SAME_CONSOLE := .f.
+    local SYNC_CALL := .t.
+    в X#
+
+
+
+
+
+
+
