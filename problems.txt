@@ -83,3 +83,18 @@
     на:
     xForException("Invalid expression type for xFor visitor"):throw()
     в x#
+    
+10:
+Файл: 
+    arminit\confibs.prg
+Проблема:
+    xbase: 
+        IF EMPTY(::cPut);::cPut := ::GetPath('ibs_home') ;END 
+        IF EMPTY(::cPutBtr);::cPutBtr := ::cPut ;END 
+        IF EMPTY(::cPutHdr);::cPutHdr := ::cPutBtr ;END 
+        IF EMPTY(::cPutPrg);::cPutPrg := ::cPut+'PROGRAM\' ;END 
+    xsharp:
+        DEFAULT0 ::cPut    TO ::GetPath('ibs_home')
+        DEFAULT0 ::cPutBtr TO ::cPut
+        DEFAULT0 ::cPutHdr TO ::cPutBtr
+        DEFAULT0 ::cPutPrg TO ::cPut+'PROGRAM\'
