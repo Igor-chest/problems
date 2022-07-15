@@ -30,7 +30,7 @@
 
 4:
 Файл:
-    src\sdklib\xml\XSharp\xmlEncoder.prg
+    src\sdklib\xml\xmlEncoder.prg
 Проблема:
     в двух строках:
     local SAME_CONSOLE := false
