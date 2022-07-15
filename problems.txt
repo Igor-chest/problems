@@ -39,10 +39,47 @@
     local SAME_CONSOLE := .f.
     local SYNC_CALL := .t.
     в X#
+    
+5:
+Файл:
+    C:\src\sdklib\xfor\Optional.prg
+Проблема:
+    так же, как и в 4 ошибке
+    не меняет false на .f. , а true на .t.
 
+6:
+Файл:
+    C:\src\sdklib\xfor\Optional.prg
+Проблема:
+    не заменяет строку
+    assert(::isPresent(), "No value present")
+    на
+    if !(::isPresent());ProgramError("No value present");endif
+    в x#
 
+7:
+Файл:
+    C:\src\sdklib\xfor\Walker.prg
+Проблема:
+    так же, как и в 4 ошибке
+    не меняет false на .f. , а true на .t.
 
+8:
+Файл:
+    C:\src\sdklib\xfor\Walker.prg
+Проблема:
+    не заменяет строку:
+    case !isObject(seq)  ; throw new RuntimeException("Unsupported sequence type for xfor")
+    на:
+    case !( VALTYPE(seq)=="O" )  ;RuntimeException():new("Unsupported sequence type for xfor"):throw()
+    в x#
 
-
-
-
+9:
+Файл:
+    C:\src\sdklib\xfor\Walker.prg
+Проблема:
+    не заменяет строку:
+    throw xForException("Invalid expression type for xFor visitor")
+    на:
+    xForException("Invalid expression type for xFor visitor"):throw()
+    в x#
