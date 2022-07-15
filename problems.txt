@@ -1,13 +1,29 @@
 1:
-Файл: src/sdklib/arminit/b_rlock.prg
+Файл:
+    src/sdklib/arminit/b_rlock.prg
 Проблема:
-не заменяет PN(a , b) на GF(a, b) в Xsharp
+    не заменяет PN(a , b) на GF(a, b) в X#
 
 2:
-Файл: 
+Файл:
+    src\sdklib\xml\gfs_sfx.prg
 Проблема:
+    В файле gfx_sfx.prg:
+    if astr(n:=val(fldleft))==fldleft
 
+    В файле gfx_sfx_xbase.ppo:
+    if ALLTRIM(STR(n:=val(fldleft)))==fldleft
+
+    В файле gfx_sfx_x#.ppo:
+    if astr(n:=val(fldleft))==fldleft
+Наблюдение:
+    если добавить строку 
+    #xtranslate ASTR(n:=<x>) => ALLTRIM(STR(n:=<x>))
+    то все прекрасно заменяется
 
 3:
-Файл: 
+Файл:
+    src\sdklib\xsd\xsd_include.prg
 Проблема:
+    не заменяет: BREAK 'не найден файл' + f
+    на: _break( 'не найден файл' + f) в X#
