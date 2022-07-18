@@ -98,3 +98,12 @@
         DEFAULT0 ::cPutBtr TO ::cPut
         DEFAULT0 ::cPutHdr TO ::cPutBtr
         DEFAULT0 ::cPutPrg TO ::cPut+'PROGRAM\'
+11:
+Файл:
+    C:\src\sdklib\struct\Range.prg
+Проблема:
+    не заменяет строку:
+    AssertEquals(6,xfor({1..3}):sum())
+    на:
+    AssertEquals(6,xfor(range(1,3)):sum())
+    в x#
