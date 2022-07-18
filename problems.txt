@@ -1,10 +1,10 @@
-1:
+1: - в работе
 Файл:
     src/sdklib/arminit/b_rlock.prg
 Проблема:
     не заменяет PN(a , b) на GF(a, b) в X#
 
-2:
+2: - не ошибка
 Файл:
     src\sdklib\xml\gfs_sfx.prg
 Проблема:
@@ -21,14 +21,14 @@
     #xtranslate ASTR(n:=<x>) => ALLTRIM(STR(n:=<x>))
     то все прекрасно заменяется
 
-3:
+3: - не ошибка
 Файл:
     src\sdklib\xsd\xsd_include.prg
 Проблема:
     не заменяет: BREAK 'не найден файл' + f
     на: _break( 'не найден файл' + f) в X#
 
-4:
+4: - не ошибка
 Файл:
     src\sdklib\xml\xmlEncoder.prg
 Проблема:
@@ -40,14 +40,14 @@
     local SYNC_CALL := .t.
     в X#
     
-5:
+5: - не ошибка
 Файл:
     C:\src\sdklib\xfor\Optional.prg
 Проблема:
     так же, как и в 4 ошибке
     не меняет false на .f. , а true на .t.
 
-6:
+6: - не уверен, но скорее всего не ошибка
 Файл:
     C:\src\sdklib\xfor\Optional.prg
 Проблема:
@@ -57,14 +57,14 @@
     if !(::isPresent());ProgramError("No value present");endif
     в x#
 
-7:
+7: - не ошибка
 Файл:
     C:\src\sdklib\xfor\Walker.prg
 Проблема:
     так же, как и в 4 ошибке
     не меняет false на .f. , а true на .t.
 
-8:
+8: - не ошибка
 Файл:
     C:\src\sdklib\xfor\Walker.prg
 Проблема:
@@ -74,7 +74,7 @@
     case !( VALTYPE(seq)=="O" )  ;RuntimeException():new("Unsupported sequence type for xfor"):throw()
     в x#
 
-9:
+9: - не ошибка
 Файл:
     C:\src\sdklib\xfor\Walker.prg
 Проблема:
@@ -84,7 +84,7 @@
     xForException("Invalid expression type for xFor visitor"):throw()
     в x#
     
-10:
+10: - не уверен, но скорее всего не ошибка
 Файл: 
     arminit\confibs.prg
 Проблема:
@@ -98,7 +98,7 @@
         DEFAULT0 ::cPutBtr TO ::cPut
         DEFAULT0 ::cPutHdr TO ::cPutBtr
         DEFAULT0 ::cPutPrg TO ::cPut+'PROGRAM\'
-11:
+11: - в работе
 Файл:
     C:\src\sdklib\struct\Range.prg
 Проблема:
