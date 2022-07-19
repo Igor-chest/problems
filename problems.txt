@@ -1,10 +1,10 @@
-1: - в работе
+1: - готово
 Файл:
     src/sdklib/arminit/b_rlock.prg
 Проблема:
     не заменяет PN(a , b) на GF(a, b) в X#
 
-2: - не ошибка
+2: - в работе
 Файл:
     src\sdklib\xml\gfs_sfx.prg
 Проблема:
@@ -98,7 +98,7 @@
         DEFAULT0 ::cPutBtr TO ::cPut
         DEFAULT0 ::cPutHdr TO ::cPutBtr
         DEFAULT0 ::cPutPrg TO ::cPut+'PROGRAM\'
-11: - в работе
+11: - игнорируем
 Файл:
     C:\src\sdklib\struct\Range.prg
 Проблема:
