@@ -105,8 +105,6 @@
     не заменяет строку:
     AssertEquals(6,xfor({1..3}):sum())
     на:
-    AssertEquals(6,xfor(range(1,3)):sum())
-    в x#
     
 12:
 Файл:
@@ -117,3 +115,17 @@
     на:
     ::d:=$18/02/2005
     в x#
+
+13:
+Файл:
+    C:\src\sdklib\iterator\iterCollection.prg
+Проблема:
+    не заменяет строку:
+    if ISOBJECT(::obj) .and. IsMethod(::obj, 'CLOSE')
+    на:
+    if ( VALTYPE(::obj)=="O" ) .and. IsMethod(::obj, 'CLOSE')
+    в x#
+Наблюдение:
+    может быть крупная рыба,
+    какие-то траблы с двоеточием,
+    и не в первый раз такое замечаю
