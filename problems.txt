@@ -129,3 +129,14 @@
     может быть крупная рыба,
     какие-то траблы с двоеточием,
     и не в первый раз такое замечаю
+
+14:
+Файл:
+    C:\src\sdklib\iterator\IterForCacheObject.prg
+Проблема:
+    при компиляции строки 
+    inline method hasTrait(trait); return IterTraitRandom():isDerivedFrom(trait); .or. IterTraitEmptyFields():isDerivedFrom(trait)
+    в xbase пропадает точка с запятой по середине, в отличие от x#
+Наблюдение:
+    возможно мелочь конечно или не ошибка вовсе,
+    но надо бы проверить, а то вдруг
