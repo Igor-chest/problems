@@ -84,7 +84,7 @@
     xForException("Invalid expression type for xFor visitor"):throw()
     в x#
     
-10: - не уверен, но скорее всего не ошибка
+10: - возможно уже затронута в тикете 1077
 Файл: 
     arminit\confibs.prg
 Проблема:
