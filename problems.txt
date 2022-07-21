@@ -47,7 +47,7 @@
     так же, как и в 4 ошибке
     не меняет false на .f. , а true на .t.
 
-6: - не уверен, но скорее всего не ошибка
+6: - https://github.com/X-Sharp/XSharpPublic/issues/1077
 Файл:
     C:\src\sdklib\xfor\Optional.prg
 Проблема:
